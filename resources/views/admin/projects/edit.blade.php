@@ -18,7 +18,7 @@
                     id="description" required maxlength="200" minlength="3">
                     {{ old('description', $project->description) }}
                 </textarea>
-                @error('body')
+                @error('description')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
@@ -26,7 +26,7 @@
                 <label for="technologies">Tecnologie</label>
                 <input type="" class="form-control @error('technologies') is-invalid @enderror" name="technologies"
                     id="technologies" value="{{ old('technologies', $project->technologies) }}">
-                @error('image')
+                @error('technologies')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
