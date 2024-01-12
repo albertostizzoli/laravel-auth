@@ -13,4 +13,5 @@
             @method('DELETE')
             <button type="submit" class="btn btn-danger cancel-button">Cancella</button>
         </form>
+        @include('partials.modal_delete')
     @endsection

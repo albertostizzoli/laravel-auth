@@ -19,13 +19,7 @@
                             </button>
                         </th>
                         <td><strong> {{ $project->title }}</strong></td>
-                        <td> <a href="{{ route('admin.projects.edit', $project->id) }}" class="btn btn-warning">Modifica</a>
-                            <form action="{{ route('admin.projects.destroy', $project->id) }}" method="POST" class="d-inline">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger cancel-button">Cancella</button>
-                        </td>
-                        </form>
+                        <td> <a href="{{ route('admin.projects.edit', $project->id) }}" class="btn btn-warning">Modifica</a></td>
                     </tr>
                 @endforeach
             </tbody>
