@@ -38,6 +38,7 @@ class UpdateProjectRequest extends FormRequest
             'title.min' => 'Il titolo deve avere almeno :min caratteri',
             'title.max' => 'Il titolo non deve superare i :max caratteri',
             'description.required' => 'La descrizione è obbligatoria',
+            'image.image' => 'Il file deve essere un immagine',
             'technologies.required' => 'Le tecnologie sono obbligatorie'
         ];
     }
