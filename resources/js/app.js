@@ -27,6 +27,6 @@ prewiewImage.addEventListener("change", (event) =>{
     let oFReader = new FileReader();
     oFReader-readAsDataURL(prewiewImage.files[0]);
     oFReader.onload = function (oFREvent){
-        document.getElementById("uploadPrewiew").src = oFREvent.target.result;
+        document.getElementById("image-preview").src = oFREvent.target.result;
     }
 })

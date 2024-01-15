@@ -31,6 +31,9 @@
                 @enderror
             </div>
             <div class="mb-3">
+                <div class="mb-2">
+                    <img class="w-25" src="{{asset('storage/'. $project->image)}}" alt="{{$project->title}}">
+                </div>
                 <label for="image">Image</label>
                 <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" id="image" value="{{old('image')}}">
                 @error('image')

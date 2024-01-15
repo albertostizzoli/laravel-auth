@@ -4,7 +4,9 @@
         <h1>{{ $project->title }}</h1>
         <p>{{ $project->description}}</p>
         <p>Tecnologie usate: {{$project->technologies}}</p>
-        <img src="{{asset('storage/'. $project->image)}}" alt="">
+        <div>
+            <img class="w-50" src="{{asset('storage/'. $project->image)}}" alt="{{$project->title}}">
+        </div>
         <button class="btn btn-primary d-inline-block">
             <a class="text-white text-decoration-none" href="{{ route('admin.projects.edit', $project->id) }}">Modifica</a>
         </button>
