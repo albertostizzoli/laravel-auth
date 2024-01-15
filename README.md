@@ -2,6 +2,7 @@
 
 ## nome repo: laravel-auth
 
+## 1'Parte: 12/01/2024
 Ciao ragazzi,
 creiamo con Laravel il nostro sistema di gestione del nostro Portfolio di progetti.
 Oggi iniziamo un nuovo progetto che si arricchirà nel corso delle prossime lezioni: man mano aggiungeremo funzionalità e vedremo la nostra applicazione crescere ed evolvere.
@@ -15,9 +16,14 @@ Iniziamo con il definire il layout, modello, migrazione, controller e rotte nece
 -- Per la parte di back-office creiamo un resource controller `Admin\ProjectController` per gestire tutte le operazioni CRUD dei progetti
 -- Implementare la visualizzazione dei dati nella index dei progetti con una tabella (con bottoni per show, edit, e delete)
 
-## Bonus
+# Bonus
 Iniziare ad implementare un template (con relativi partials) per una dshboard di amministrazione
 
+## 2'Parte: 15/01/2024
+
+Ciao ragazzi,
+continuiamo a lavorare nella repo dei giorni scorsi e aggiungiamo un’immagine ai nostri progetti con il fileupload.
+Ricordiamoci di creare il symlink con l’apposito comando artisan e di aggiungere l’attributo enctype="multipart/form-data" ai form di creazione e di modifica!
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
