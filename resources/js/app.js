@@ -21,3 +21,12 @@ buttons.forEach(button => {
         })
     });
 });
+
+const prewiewImage = document.getElementById("image");
+prewiewImage.addEventListener("change", (event) =>{
+    let oFReader = new FileReader();
+    oFReader-readAsDataURL(prewiewImage.files[0]);
+    oFReader.onload = function (oFREvent){
+        document.getElementById("uploadPrewiew").src = oFREvent.target.result;
+    }
+})
