@@ -23,6 +23,14 @@
                 @enderror
             </div>
             <div class="mb-3">
+                <label for="url">Repo GitHub</label>
+                <input type="text" class="form-control @error('url') is-invalid @enderror" name="url" id="url"
+                    required maxlength="200" minlength="3">
+                @error('url')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+            <div class="mb-3">
                 <label for="technologies">Tecnologie</label>
                 <input type="" class="form-control @error('technologies') is-invalid @enderror" name="technologies"
                     id="technologies" value="{{ old('technologies', $project->technologies) }}">

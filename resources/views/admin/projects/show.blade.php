@@ -4,6 +4,7 @@
         <h1>{{ $project->title }}</h1>
         <p>{{ $project->description}}</p>
         <p>Tecnologie usate: {{$project->technologies}}</p>
+        <p>Repo GitHub:<a href="{{$project->url}}">{{$project->url}}</a></p>
         <div>
             <img class="w-50" src="{{asset('storage/'. $project->image)}}" alt="{{$project->title}}">
         </div>
