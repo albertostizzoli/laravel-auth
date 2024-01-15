@@ -223,3 +223,4 @@ Route::fallback(function() {
 });
 
 ```
+php -S localhost:8000 -t public/

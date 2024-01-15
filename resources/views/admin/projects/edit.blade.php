@@ -2,7 +2,7 @@
 @section('content')
     <h2 class="text-center mt-2">CREA UN NUOVO PROGETTO</h2>
     <section class="container">
-        <form action="{{ route('admin.projects.store') }}" method="POST">
+        <form action="{{ route('admin.projects.store') }}" enctype="multipart/form-data" method="POST">
             @csrf
             <div class="mb-3">
                 <label for="title">Titolo</label>
@@ -27,6 +27,13 @@
                 <input type="" class="form-control @error('technologies') is-invalid @enderror" name="technologies"
                     id="technologies" value="{{ old('technologies', $project->technologies) }}">
                 @error('technologies')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+            <div class="mb-3">
+                <label for="image">Image</label>
+                <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" id="image" value="{{old('image')}}">
+                @error('image')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
