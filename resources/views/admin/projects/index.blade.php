@@ -18,11 +18,11 @@
                                 <th scope="row">
                                     <button class="btn btn-primary">
                                         <a class=" text-white text-decoration-none"
-                                            href="{{ route('admin.projects.show', $project->id) }}">Mostra</a>
+                                            href="{{ route('admin.projects.show', $project->slug) }}">Mostra</a>
                                     </button>
                                 </th>
                                 <td><strong> {{ $project->title }}</strong></td>
-                                <td> <a href="{{ route('admin.projects.edit', $project->id) }}"
+                                <td> <a href="{{ route('admin.projects.edit', $project->slug) }}"
                                         class="btn btn-warning">Modifica</a></td>
                             </tr>
                         @endforeach
